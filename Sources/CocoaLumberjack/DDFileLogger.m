@@ -554,8 +554,8 @@ NSTimeInterval     const kDDRollingLeeway              = 1.0;              // 1s
         } else {
             _dateFormatter = [[NSDateFormatter alloc] init];
             [_dateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4]; // 10.4+ style
-            [_dateFormatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
-            [_dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+//            [_dateFormatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
+//            [_dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
             [_dateFormatter setDateFormat:@"yyyy/MM/dd HH:mm:ss:SSS"];
         }
     }
